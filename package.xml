@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfGuardPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>Identity management plugin.</summary>
+ <description>Identity management plugin.</description>
+ <lead>
+  <name>Fabien POTENCIER</name>
+  <user>fabpot</user>
+  <email>fabien.potencier@symfony-project.com</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Jason IBELE</name>
+  <user>draven</user>
+  <email></email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Dave DASH</name>
+  <user>davedash</user>
+  <email>dd-symfony@davedash.com</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>Francois Zaninotto</name>
+  <user>fzaninotto</user>
+  <email>francois.zaninotto@symfony-project.com</email>
+  <active>yes</active>
+ </developer>
+ <date>2007-11-14</date>
+ <version>
+   <release>1.1.13</release>
+   <api>1.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+   <dir name="/">
+     <file role="data" name="README" />
+     <file role="data" name="LICENSE" />
+
+     <dir name="config">
+       <file role="data" name="config.php" />
+       <!-- model -->
+       <file role="data" name="schema.yml" />
+     </dir>
+
+     <dir name="data">
+       <dir name="fixtures">
+         <!-- fixtures -->
+         <file role="data" name="fixtures.yml" />
+       </dir>
+
+       <dir name="tasks">
+         <!-- tasks -->
+         <file role="data" name="sfGuardSuperAdminTask.php" />
+       </dir>
+     </dir>
+
+     <dir name="lib">
+       <dir name="model">
+         <dir name="plugin">
+           <file role="data" name="PluginsfGuardGroup.php" />
+           <file role="data" name="PluginsfGuardGroupPeer.php" />
+           <file role="data" name="PluginsfGuardGroupPermission.php" />
+           <file role="data" name="PluginsfGuardGroupPermissionPeer.php" />
+           <file role="data" name="PluginsfGuardPermission.php" />
+           <file role="data" name="PluginsfGuardPermissionPeer.php" />
+           <file role="data" name="PluginsfGuardUser.php" />
+           <file role="data" name="PluginsfGuardUserPeer.php" />
+           <file role="data" name="PluginsfGuardUserGroup.php" />
+           <file role="data" name="PluginsfGuardUserGroupPeer.php" />
+           <file role="data" name="PluginsfGuardUserPermission.php" />
+           <file role="data" name="PluginsfGuardUserPermissionPeer.php" />
+           <file role="data" name="PluginsfGuardRememberKey.php" />
+           <file role="data" name="PluginsfGuardRememberKeyPeer.php" />
+         </dir>
+         <file role="data" name="sfGuardGroup.php" />
+         <file role="data" name="sfGuardGroupPeer.php" />
+         <file role="data" name="sfGuardGroupPermission.php" />
+         <file role="data" name="sfGuardGroupPermissionPeer.php" />
+         <file role="data" name="sfGuardPermission.php" />
+         <file role="data" name="sfGuardPermissionPeer.php" />
+         <file role="data" name="sfGuardUser.php" />
+         <file role="data" name="sfGuardUserPeer.php" />
+         <file role="data" name="sfGuardUserGroup.php" />
+         <file role="data" name="sfGuardUserGroupPeer.php" />
+         <file role="data" name="sfGuardUserPermission.php" />
+         <file role="data" name="sfGuardUserPermissionPeer.php" />
+         <file role="data" name="sfGuardRememberKey.php" />
+         <file role="data" name="sfGuardRememberKeyPeer.php" />
+       </dir>
+
+       <dir name="user">
+         <file role="data" name="sfGuardSecurityUser.class.php" />
+       </dir>
+
+       <file role="data" name="sfGuardBasicSecurityFilter.class.php" />
+
+       <dir name="validator">
+         <file role="data" name="sfGuardUserValidator.class.php" />
+       </dir>
+     </dir>
+
+     <dir name="modules">
+       <dir name="sfGuardAuth">
+         <file role="data" name="actions/actions.class.php" />
+         <file role="data" name="config/security.yml" />
+         <file role="data" name="lib/BasesfGuardAuthActions.class.php" />
+         <file role="data" name="templates/secureSuccess.php" />
+         <file role="data" name="templates/signinSuccess.php" />
+         <file role="data" name="validate/signin.yml" />
+       </dir>
+
+       <dir name="sfGuardGroup">
+         <file role="data" name="actions/actions.class.php" />
+         <file role="data" name="config/generator.yml" />
+         <file role="data" name="validate/edit.yml" />
+       </dir>
+
+       <dir name="sfGuardPermission">
+         <file role="data" name="actions/actions.class.php" />
+         <file role="data" name="config/generator.yml" />
+         <file role="data" name="validate/edit.yml" />
+       </dir>
+
+       <dir name="sfGuardUser">
+         <file role="data" name="actions/actions.class.php" />
+         <file role="data" name="config/generator.yml" />
+         <file role="data" name="lib/BasesfGuardUserActions.class.php" />
+         <file role="data" name="templates/_password.php" />
+         <file role="data" name="templates/_password_bis.php" />
+         <file role="data" name="validate/edit.yml" />
+       </dir>
+     </dir>
+   </dir>
+ </contents>
+
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.0.0</min>
+    <max>1.1.0</max>
+    <exclude>1.1.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+
+ <phprelease>
+ </phprelease>
+
+ <changelog>
+ </changelog>
+</package>
