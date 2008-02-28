@@ -12,7 +12,7 @@ a configurable plugin.
   * Install the plugin
 
     {{{
-      symfony plugin:install http://plugins.symfony-project.com/sfGuardPlugin
+      symfony plugin:install sfGuardPlugin
     }}}
 
   * Rebuild your model
