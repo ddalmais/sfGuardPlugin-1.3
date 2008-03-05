@@ -365,11 +365,15 @@ You can change the redirect values in `app.yml`:
 
 == TODO ==
 
-  * finish the `promote_super_user` task
   * finish the `getPassword` method
   * add support for HTTP Basic authentication
 
 == Changelog ==
+
+=== 2.1.0-PRE ===
+
+  * fabien: added forms (migrated sfGuardAuth)
+  * fabien: added guard:create_user and guard:promote tasks
 
 === 2.0.0 ===
 
