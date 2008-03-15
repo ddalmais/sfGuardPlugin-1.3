@@ -1,6 +1,21 @@
 <?php
 
-class sfGuardValidatorUser extends sfValidator
+/*
+ * This file is part of the symfony package.
+ * (c) Fabien Potencier <fabien.potencier@symfony-project.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
+ *
+ * @package    symfony
+ * @subpackage plugin
+ * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
+ * @version    SVN: $Id$
+ */
+class sfGuardValidatorUser extends sfValidatorBase
 {
   public function configure($options = array(), $messages = array())
   {
