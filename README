@@ -35,7 +35,7 @@ a configurable plugin.
   * Load default fixtures (optional - it creates a superadmin user)
 
     {{{
-      symfony propel:load-data frontend
+      symfony propel:data-load frontend
     }}}
 
   * Enable one or more modules in your `settings.yml` (optional)
@@ -113,7 +113,7 @@ To secure a symfony application:
   These routes are automatically registered by the plugin if the module `sfGuardAuth`
   is enabled unless you defined `sf_guard_plugin_routes_register` to false
   in the `app.yml` configuration file:
-  
+
   {{{
     all:
       sf_guard_plugin:
@@ -147,7 +147,7 @@ These modules are auto-generated thanks to the symfony admin generator.
   }}}
 
   * Access the modules with the default route:
- 
+
   {{{
     http://www.example.com/backend.php/sfGuardUser
   }}}
@@ -163,7 +163,7 @@ If you want to customize one of these templates:
 
   * Create a `sfGuardAuth` module in your application (don't use the
     `init-module` task, just create a `sfGuardAuth` directory)
- 
+
   * Create a template with the name of the template you want to customize in
     the `sfGuardAuth/templates` directory
 
@@ -174,7 +174,7 @@ If you want to customize one of these templates:
 If you want to customize or add methods to the sfGuardAuth:
 
   * Create a `sfGuardAuth` module in your application
-  
+
   * Create an `actions.class.php` file in your `actions` directory that inherit
     from `BasesfGuardAuthActions` (don't forget to include the `BasesfGuardAuthActions`
     as it can't be autoloaded by symfony)
