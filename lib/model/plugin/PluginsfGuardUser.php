@@ -30,7 +30,7 @@ class PluginsfGuardUser extends BasesfGuardUser
 
   public function setPassword($password)
   {
-    if (!$password)
+    if (!$password) && 0 == strlen($password))
     {
       return;
     }
