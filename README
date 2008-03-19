@@ -237,13 +237,13 @@ directly in the database or use the pake task:
 This validator is used by the `sfGuardAuth` module to validate a user and
 password and automatically signin the user.
 
-== Customize the `sfAuthUser` model ==
+== Customize the `sfGuardUser` model ==
 
-The `sfAuthUser` model is quite simple. There is no `email` or `first_name`
+The `sfGuardUser` model is quite simple. There is no `email` or `first_name`
 or `birthday` columns. As you cannot add methods to the class, the `sfAuthPlugin`
 gives you the possibility to define a user profile class.
 
-By default, `sfAuthUser` looks for a `sfGuardUserProfile` class.
+By default, `sfGuardUser` looks for a `sfGuardUserProfile` class.
 
 Here is a simple example of a `sfGuardProfile` class that you can add to `schema.yml`:
 
