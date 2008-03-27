@@ -51,7 +51,7 @@ EOF;
    */
   protected function execute($arguments = array(), $options = array())
   {
-    $configuration = sfApplicationConfiguration::getForApplication($arguments['application'], $options['env'], true);
+    $configuration = ProjectConfiguration::getApplicationConfiguration($arguments['application'], $options['env'], true);
 
     $databaseManager = new sfDatabaseManager($configuration);
 
