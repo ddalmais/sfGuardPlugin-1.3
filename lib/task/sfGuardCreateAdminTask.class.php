@@ -16,6 +16,7 @@
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @version    SVN: $Id$
  */
+require_once sfConfig::get('sf_symfony_lib_dir').'/plugins/sfPropelPlugin/lib/task/sfPropelBaseTask.class.php';
 class sfGuardPromoteSuperAdminTask extends sfPropelBaseTask
 {
   /**
