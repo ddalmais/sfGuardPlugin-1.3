@@ -1,4 +1,4 @@
-fGuardUser:
+sfGuardUser:
   admin:
     username:       admin
     password:       admin
