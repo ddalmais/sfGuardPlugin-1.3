@@ -375,6 +375,7 @@ You can change the redirect values in `app.yml`:
 
 === 2.1.0-PRE ===
 
+  * fabien: fixe typo (#3501)
   * fabien: added forms (migrated sfGuardAuth)
   * fabien: added guard:create_user and guard:promote tasks
 

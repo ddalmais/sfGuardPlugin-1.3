@@ -35,7 +35,7 @@ class BasesfGuardAuthActions extends sfActions
         $values = $this->form->getValues();
         $this->getUser()->signin($values['user']);
 
-        $signinUrl = sfConfig::get('app_sf_guard_plugin_success_signinUrl', $user->getReferer($request->getReferer()));
+        $signinUrl = sfConfig::get('app_sf_guard_plugin_success_signin_url', $user->getReferer($request->getReferer()));
 
         return $this->redirect('' != $signinUrl ? $signinUrl : '@homepage');
       }
