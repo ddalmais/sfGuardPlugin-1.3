@@ -59,7 +59,7 @@ class PluginsfGuardUser extends BasesfGuardUser
   {
     if ($callable = sfConfig::get('app_sf_guard_plugin_check_password_callable'))
     {
-      return call_user_func_array($callable, array($this->getUsername(), $password));
+      return call_user_func_array($callable, array($this->getUsername(), $password, $this));
     }
     else
     {
@@ -239,7 +239,7 @@ class PluginsfGuardUser extends BasesfGuardUser
 
       foreach ($this->getGroups() as $group)
       {
-        foreach ($group->getsfGuardGroupPermissions() as $gp)
+        foreach ($group->getsfGuardGroupPermissionsJoinsfGuardPermission() as $gp)
         {
           $permission = $gp->getsfGuardPermission();
 
@@ -270,14 +270,14 @@ class PluginsfGuardUser extends BasesfGuardUser
     {
       if ($profile = $this->getProfile())
       {
-        $profile->delete();
+        $profile->delete($con);
       }
     }
     catch (sfException $e)
     {
     }
 
-    return parent::delete();
+    return parent::delete($con);
   }
 
   public function setPasswordHash($v)

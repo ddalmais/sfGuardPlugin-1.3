@@ -28,9 +28,9 @@
   <email>francois.zaninotto@symfony-project.com</email>
   <active>yes</active>
  </developer>
- <date>2008-04-02</date>
+ <date>2008-05-26</date>
  <version>
-   <release>2.0.2</release>
+   <release>2.1.0</release>
    <api>1.1.0</api>
  </version>
  <stability>

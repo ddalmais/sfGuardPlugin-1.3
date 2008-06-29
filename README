@@ -373,9 +373,15 @@ You can change the redirect values in `app.yml`:
 
 == Changelog ==
 
+=== 2.2.0 ===
+
 === 2.1.0-PRE ===
 
-  * fabien: fixe typo (#3501)
+  * fabien: optimized getAllPermissions() number of database requests (#3238)
+  * fabien: added the user object as a third parameter when calling the `app_sf_guard_plugin_check_password_callable` callable (#3231)
+  * fabien: fixed `isSuperAdmin()` method (#2719)
+  * fabien: fixed schema for IPv6 (#3626)
+  * fabien: fixed typo (#3501)
   * fabien: added forms (migrated sfGuardAuth)
   * fabien: added guard:create_user and guard:promote tasks
 

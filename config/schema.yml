@@ -44,5 +44,5 @@ propel:
     _attributes:    { phpName: sfGuardRememberKey }
     user_id:        { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade }
     remember_key:   { type: varchar, size: 32 }
-    ip_address:     { type: varchar, size: 15, primaryKey: true }
+    ip_address:     { type: varchar, size: 50, primaryKey: true }
     created_at:     ~
