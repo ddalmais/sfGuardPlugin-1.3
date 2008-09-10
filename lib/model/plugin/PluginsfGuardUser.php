@@ -263,7 +263,7 @@ class PluginsfGuardUser extends BasesfGuardUser
     $this->allPermissions = null;
   }
 
-  public function delete($con = null)
+  public function delete(PropelPDO $con = null)
   {
     // delete profile if available
     try

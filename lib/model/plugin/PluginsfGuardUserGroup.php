@@ -17,7 +17,7 @@
  */
 class PluginsfGuardUserGroup extends BasesfGuardUserGroup
 {
-  public function save($con = null)
+  public function save(PropelPDO $con = null)
   {
     parent::save($con);
 
