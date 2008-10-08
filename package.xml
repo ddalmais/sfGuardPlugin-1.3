@@ -26,11 +26,11 @@
   <name>Francois Zaninotto</name>
   <user>fzaninotto</user>
   <email>francois.zaninotto@symfony-project.com</email>
-  <active>yes</active>
+  <active>no</active>
  </developer>
- <date>2008-05-26</date>
+ <date>2008-10-08</date>
  <version>
-   <release>2.1.0</release>
+   <release>3.0.0</release>
    <api>1.1.0</api>
  </version>
  <stability>
@@ -111,6 +111,8 @@
        <dir name="task">
          <file role="data" name="sfGuardCreateAdminTask.class.php" />
          <file role="data" name="sfGuardCreateUserTask.class.php" />
+         <file role="data" name="sfGuardAddPermissionTask.class.php" />
+         <file role="data" name="sfGuardAddGroupTask.class.php" />
        </dir>
 
        <dir name="validator">
@@ -145,6 +147,7 @@
          <file role="data" name="lib/BasesfGuardUserActions.class.php" />
          <file role="data" name="templates/_password.php" />
          <file role="data" name="templates/_password_bis.php" />
+         <file role="data" name="templates/_groups.php" />
          <file role="data" name="validate/edit.yml" />
        </dir>
      </dir>
@@ -172,6 +175,22 @@
  <phprelease>
  </phprelease>
 
- <changelog>
- </changelog>
+  <changelog>
+    <release>
+      <version>
+        <release>3.0.0</release>
+        <api>1.1.0</api>
+      </version>
+      <stability>
+       <release>stable</release>
+       <api>stable</api>
+      </stability>
+      <license uri="http://www.symfony-project.com/license">MIT license</license>
+      <date>2008-10-08</date>
+      <license>MIT</license>
+      <notes>
+        * noel: backported changes from 1.1
+      </notes>
+    </release>
+  </changelog>
 </package>

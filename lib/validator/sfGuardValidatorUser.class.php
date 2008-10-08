@@ -21,6 +21,7 @@ class sfGuardValidatorUser extends sfValidatorBase
   {
     $this->addOption('username_field', 'username');
     $this->addOption('password_field', 'password');
+    $this->addOption('rememeber_checkbox', 'remember');
     $this->addOption('throw_global_error', false);
 
     $this->setMessage('invalid', 'The username and/or password is invalid.');
@@ -30,6 +31,7 @@ class sfGuardValidatorUser extends sfValidatorBase
   {
     $username = isset($values[$this->getOption('username_field')]) ? $values[$this->getOption('username_field')] : '';
     $password = isset($values[$this->getOption('password_field')]) ? $values[$this->getOption('password_field')] : '';
+    $remember = isset($values[$this->getOption('rememeber_checkbox')]) ? $values[$this->getOption('rememeber_checkbox')] : '';
 
     // user exists?
     if ($user = sfGuardUserPeer::retrieveByUsername($username))

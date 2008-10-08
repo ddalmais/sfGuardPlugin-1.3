@@ -9,14 +9,14 @@
  */
 
 /**
- * Promote a user as a super administrator.
+ * Add a permission to a user.
  *
  * @package    symfony
  * @subpackage task
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @version    SVN: $Id$
  */
-class sfGuardPromoteSuperAdminTask extends sfPropelBaseTask
+class sfGuardAddPermissionTask extends sfPropelBaseTask
 {
   /**
    * @see sfTask
@@ -26,6 +26,7 @@ class sfGuardPromoteSuperAdminTask extends sfPropelBaseTask
     $this->addArguments(array(
       new sfCommandArgument('application', sfCommandArgument::REQUIRED, 'The application name'),
       new sfCommandArgument('username', sfCommandArgument::REQUIRED, 'The user name'),
+      new sfCommandArgument('permission', sfCommandArgument::REQUIRED, 'The permission name'),
     ));
 
     $this->addOptions(array(
@@ -34,15 +35,15 @@ class sfGuardPromoteSuperAdminTask extends sfPropelBaseTask
     ));
 
     $this->namespace = 'guard';
-    $this->name = 'promote';
-    $this->briefDescription = 'Promotes a user as a super administrator';
+    $this->name = 'add-permission';
+    $this->briefDescription = 'Adds a permission to a user';
 
     $this->detailedDescription = <<<EOF
-The [guard:promote|INFO] task promotes a user as a super administrator:
+The [guard:add-permission|INFO] task adds a permission to a user:
 
-  [./symfony guard:promote fabien|INFO]
+  [./symfony guard:add-permission fabien admin|INFO]
 
-The user must exist in the database.
+The user and the permission must exist in the database.
 EOF;
   }
 
@@ -61,9 +62,8 @@ EOF;
       throw new sfCommandException(sprintf('User "%s" does not exist.', $arguments['username']));
     }
 
-    $user->setIsSuperAdmin(true);
-    $user->save();
+    $user->addPermissionByName($arguments['permission']);
 
-    $this->logSection('guard', sprintf('Promote user %s as a super administrator', $arguments['username']));
+    $this->logSection('guard', sprintf('Add permission %s to user %s', $arguments['permission'], $arguments['username']));
   }
 }
