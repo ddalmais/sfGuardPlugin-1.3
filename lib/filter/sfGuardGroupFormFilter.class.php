@@ -1,13 +1,14 @@
 <?php
 
 /**
- * sfGuardGroup form.
+ * sfGuardGroup filter form.
  *
- * @package    form
- * @subpackage sf_guard_group
+ * @package    ##PROJECT_NAME##
+ * @subpackage filter
+ * @author     ##AUTHOR_NAME##
  * @version    SVN: $Id$
  */
-class sfGuardGroupForm extends BasesfGuardGroupForm
+class sfGuardGroupFormFilter extends BasesfGuardGroupFormFilter
 {
   public function configure()
   {

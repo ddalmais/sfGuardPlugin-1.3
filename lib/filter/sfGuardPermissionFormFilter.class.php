@@ -1,13 +1,14 @@
 <?php
 
 /**
- * sfGuardPermission form.
+ * sfGuardPermission filter form.
  *
- * @package    form
- * @subpackage sf_guard_permission
+ * @package    ##PROJECT_NAME##
+ * @subpackage filter
+ * @author     ##AUTHOR_NAME##
  * @version    SVN: $Id$
  */
-class sfGuardPermissionForm extends BasesfGuardPermissionForm
+class sfGuardPermissionFormFilter extends BasesfGuardPermissionFormFilter
 {
   public function configure()
   {
