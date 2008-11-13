@@ -1,7 +1,6 @@
 <?php
 
-require_once dirname(__FILE__).'/../lib/sfGuardPermissionGeneratorConfiguration.class.php';
-require_once dirname(__FILE__).'/../lib/sfGuardPermissionGeneratorHelper.class.php';
+require_once dirname(__FILE__).'/../lib/BasesfGuardPermissionActions.class.php';
 
 /**
  * sfGuardPermission actions.
@@ -11,6 +10,6 @@ require_once dirname(__FILE__).'/../lib/sfGuardPermissionGeneratorHelper.class.p
  * @author     Fabien Potencier
  * @version    SVN: $Id$
  */
-class sfGuardPermissionActions extends autosfGuardPermissionActions
+class sfGuardPermissionActions extends BasesfGuardPermissionActions
 {
 }

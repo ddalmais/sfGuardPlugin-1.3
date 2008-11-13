@@ -1,7 +1,6 @@
 <?php
 
-require_once dirname(__FILE__).'/../lib/sfGuardUserGeneratorConfiguration.class.php';
-require_once dirname(__FILE__).'/../lib/sfGuardUserGeneratorHelper.class.php';
+require_once dirname(__FILE__).'/../lib/BasesfGuardUserActions.class.php';
 
 /**
  * sfGuardUser actions.
@@ -11,6 +10,6 @@ require_once dirname(__FILE__).'/../lib/sfGuardUserGeneratorHelper.class.php';
  * @author     Fabien Potencier
  * @version    SVN: $Id$
  */
-class sfGuardUserActions extends autoSfGuardUserActions
+class sfGuardUserActions extends basesfGuardUserActions
 {
 }

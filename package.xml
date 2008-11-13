@@ -10,28 +10,10 @@
   <email>fabien.potencier@symfony-project.com</email>
   <active>yes</active>
  </lead>
- <lead>
-  <name>Jason IBELE</name>
-  <user>draven</user>
-  <email></email>
-  <active>no</active>
- </lead>
- <lead>
-  <name>Dave DASH</name>
-  <user>davedash</user>
-  <email>dd-symfony@davedash.com</email>
-  <active>no</active>
- </lead>
- <developer>
-  <name>Francois Zaninotto</name>
-  <user>fzaninotto</user>
-  <email>francois.zaninotto@symfony-project.com</email>
-  <active>no</active>
- </developer>
- <date>2008-10-08</date>
+ <date>2008-11-13</date>
  <version>
-   <release>3.0.0</release>
-   <api>1.1.0</api>
+   <release>3.1.0</release>
+   <api>3.0.0</api>
  </version>
  <stability>
   <release>stable</release>
@@ -132,23 +114,25 @@
        <dir name="sfGuardGroup">
          <file role="data" name="actions/actions.class.php" />
          <file role="data" name="config/generator.yml" />
-         <file role="data" name="validate/edit.yml" />
+         <file role="data" name="lib/BasesfGuardGroupActions.class.php" />
+         <file role="data" name="lib/sfGuardGroupGeneratorConfiguration.class.php" />
+         <file role="data" name="lib/sfGuardGroupGeneratorHelper.class.php" />
        </dir>
 
        <dir name="sfGuardPermission">
          <file role="data" name="actions/actions.class.php" />
          <file role="data" name="config/generator.yml" />
-         <file role="data" name="validate/edit.yml" />
+         <file role="data" name="lib/BasesfGuardPermissionActions.class.php" />
+         <file role="data" name="lib/sfGuardPermissionGeneratorConfiguration.class.php" />
+         <file role="data" name="lib/sfGuardPermissionGeneratorHelper.class.php" />
        </dir>
 
        <dir name="sfGuardUser">
          <file role="data" name="actions/actions.class.php" />
          <file role="data" name="config/generator.yml" />
          <file role="data" name="lib/BasesfGuardUserActions.class.php" />
-         <file role="data" name="templates/_password.php" />
-         <file role="data" name="templates/_password_bis.php" />
-         <file role="data" name="templates/_groups.php" />
-         <file role="data" name="validate/edit.yml" />
+         <file role="data" name="lib/sfGuardUserGeneratorConfiguration.class.php" />
+         <file role="data" name="lib/sfGuardUserGeneratorHelper.class.php" />
        </dir>
      </dir>
    </dir>
@@ -175,7 +159,23 @@
  <phprelease>
  </phprelease>
 
-  <changelog>
+ <changelog>
+   <release>
+     <version>
+       <release>3.1.0</release>
+       <api>3.0.0</api>
+     </version>
+     <stability>
+      <release>stable</release>
+      <api>stable</api>
+     </stability>
+     <license uri="http://www.symfony-project.com/license">MIT license</license>
+     <date>2008-05-26</date>
+     <license>MIT</license>
+     <notes>
+       * fabien: updated admin generator for 1.2
+     </notes>
+   </release>
     <release>
       <version>
         <release>3.0.0</release>
