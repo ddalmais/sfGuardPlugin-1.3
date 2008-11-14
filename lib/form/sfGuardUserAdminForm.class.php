@@ -45,7 +45,7 @@ class sfGuardUserAdminForm extends BasesfGuardUserForm
     }
   }
 
-  public function updateObject($values = array())
+  public function updateObject($values = null)
   {
     parent::updateObject($values);
 
