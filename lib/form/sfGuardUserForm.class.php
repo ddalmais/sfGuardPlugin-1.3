@@ -7,13 +7,15 @@
  * @subpackage sf_guard_user
  * @version    SVN: $Id$
  */
-class sfGuardUserForm extends BasesfGuardUserAdminForm
+class sfGuardUserForm extends sfGuardUserAdminForm
 {
   protected
     $pkName = null;
 
   public function configure()
   {
+    parent::configure();
+
     unset(
       $this['last_login'],
       $this['created_at'],
