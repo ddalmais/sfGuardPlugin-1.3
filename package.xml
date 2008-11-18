@@ -10,9 +10,9 @@
   <email>fabien.potencier@symfony-project.com</email>
   <active>yes</active>
  </lead>
- <date>2008-11-13</date>
+ <date>2008-11-18</date>
  <version>
-   <release>3.1.0</release>
+   <release>3.1.1</release>
    <api>3.0.0</api>
  </version>
  <stability>
@@ -46,9 +46,19 @@
          <file role="data" name="sfGuardGroupPermissionForm.class.php" />
          <file role="data" name="sfGuardPermissionForm.class.php" />
          <file role="data" name="sfGuardRememberKeyForm.class.php" />
+         <file role="data" name="sfGuardUserAdminForm.class.php" />
          <file role="data" name="sfGuardUserForm.class.php" />
          <file role="data" name="sfGuardUserGroupForm.class.php" />
          <file role="data" name="sfGuardUserPermissionForm.class.php" />
+       </dir>
+       <dir name="filter">
+        <file role="data" name="sfGuardGroupFormFilter.class.php" />
+        <file role="data" name="sfGuardGroupPermissionFormFilter.class.php" />
+        <file role="data" name="sfGuardPermissionFormFilter.class.php" />
+        <file role="data" name="sfGuardRememberKeyFormFilter.class.php" />
+        <file role="data" name="sfGuardUserFormFilter.class.php" />
+        <file role="data" name="sfGuardUserGroupFormFilter.class.php" />
+        <file role="data" name="sfGuardUserPermissionFormFilter.class.php" />
        </dir>
        <dir name="model">
          <dir name="plugin">
@@ -160,6 +170,25 @@
  </phprelease>
 
  <changelog>
+  <release>
+     <version>
+       <release>3.1.1</release>
+       <api>3.0.0</api>
+     </version>
+     <stability>
+      <release>stable</release>
+      <api>stable</api>
+     </stability>
+     <license uri="http://www.symfony-project.com/license">MIT license</license>
+     <date>2008-11-18</date>
+     <license>MIT</license>
+     <notes>
+       * noel: fixed package dependencies
+       * noel: fixed sfGuardUserAdminForm::updateObject signature
+       * noel: Deleted base form filters
+       * noel: fixed sfGuardUserForm
+     </notes>
+   </release>
    <release>
      <version>
        <release>3.1.0</release>
