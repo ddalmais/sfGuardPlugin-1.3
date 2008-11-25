@@ -35,36 +35,36 @@ class sfGuardRouting
   static public function addRouteForAdminUser(sfEvent $event)
   {
     $event->getSubject()->prependRoute('sf_guard_user', new sfPropelRouteCollection(array(
-      'name'                => 'sf_guard_user',
-      'model'               => 'sfGuardUser',
-      'module'              => 'sfGuardUser',
-      'prefix_path'         => 'sf_guard_user',
-      'with_wilcard_routes' => true,
-      'requirements'        => array(),
+      'name'                 => 'sf_guard_user',
+      'model'                => 'sfGuardUser',
+      'module'               => 'sfGuardUser',
+      'prefix_path'          => 'sf_guard_user',
+      'with_wildcard_routes' => true,
+      'requirements'         => array(),
     )));
   }
 
   static public function addRouteForAdminGroup(sfEvent $event)
   {
     $event->getSubject()->prependRoute('sf_guard_group', new sfPropelRouteCollection(array(
-      'name'                => 'sf_guard_group',
-      'model'               => 'sfGuardGroup',
-      'module'              => 'sfGuardGroup',
-      'prefix_path'         => 'sf_guard_group',
-      'with_wilcard_routes' => true,
-      'requirements'        => array(),
+      'name'                 => 'sf_guard_group',
+      'model'                => 'sfGuardGroup',
+      'module'               => 'sfGuardGroup',
+      'prefix_path'          => 'sf_guard_group',
+      'with_wildcard_routes' => true,
+      'requirements'         => array(),
     )));
   }
 
   static public function addRouteForAdminPermission(sfEvent $event)
   {
     $event->getSubject()->prependRoute('sf_guard_permission', new sfPropelRouteCollection(array(
-      'name'                => 'sf_guard_permission',
-      'model'               => 'sfGuardPermission',
-      'module'              => 'sfGuardPermission',
-      'prefix_path'         => 'sf_guard_permission',
-      'with_wilcard_routes' => true,
-      'requirements'        => array(),
+      'name'                 => 'sf_guard_permission',
+      'model'                => 'sfGuardPermission',
+      'module'               => 'sfGuardPermission',
+      'prefix_path'          => 'sf_guard_permission',
+      'with_wildcard_routes' => true,
+      'requirements'         => array(),
     )));
   }
 }
