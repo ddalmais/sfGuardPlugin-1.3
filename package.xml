@@ -10,9 +10,9 @@
   <email>fabien.potencier@symfony-project.com</email>
   <active>yes</active>
  </lead>
- <date>2008-11-25</date>
+ <date>2008-12-05</date>
  <version>
-   <release>3.1.2</release>
+   <release>3.1.3</release>
    <api>3.0.0</api>
  </version>
  <stability>
@@ -170,6 +170,23 @@
  </phprelease>
 
  <changelog>
+   <release>
+      <version>
+        <release>3.1.3</release>
+        <api>3.0.0</api>
+      </version>
+      <stability>
+       <release>stable</release>
+       <api>stable</api>
+      </stability>
+      <license uri="http://www.symfony-project.com/license">MIT license</license>
+      <date>2008-12-05</date>
+      <license>MIT</license>
+      <notes>
+        * fabien: updated README file
+        * fabien: changed all task to take an application option instead of an argument
+      </notes>
+    </release>
   <release>
      <version>
        <release>3.1.2</release>

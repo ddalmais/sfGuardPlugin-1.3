@@ -19,21 +19,16 @@ Installation
 
         $ symfony propel:build-model
         $ symfony propel:build-sql
+        $ symfony propel:build-forms
+        $ symfony propel:build-filters
 
-  * Update you database tables by starting from scratch (it will delete all
+  * Update your database tables by starting from scratch (it will delete all
     the existing tables, then re-create them):
 
         $ symfony propel:insert-sql
 
     or you can just create the new tables by using the generated SQL
     statements in `data/sql/plugins.sfGuardAuth.lib.model.schema.sql`
-
-  * Load default fixtures (optional - it creates a superadmin user)
-
-        $ mkdir data/fixtures/
-        $ cp plugins/sfGuardPlugin/data/fixtures/fixtures.yml.sample data/fixtures/sfGuard.yml
-
-        $ symfony propel:data-load frontend # replace frontend with the name of one of your application
 
   * Enable one or more modules in your `settings.yml` (optional)
     * For your backend application:  sfGuardUser, sfGuardGroup, sfGuardPermission
@@ -47,6 +42,10 @@ Installation
   * Clear you cache
 
         $ symfony cc
+
+  * Optionally create a default user:
+
+        $ symfony guard:create-user fabien $ecret
 
   * Optionally enable the "Remember Me" filter in `filters.yml`
 
@@ -104,10 +103,10 @@ To secure a symfony application:
   is enabled unless you defined `sf_guard_plugin_routes_register` to false
   in the `app.yml` configuration file:
 
-      [yml]
-      all:
-        sf_guard_plugin:
-          routes_register: false
+        [yml]
+        all:
+          sf_guard_plugin:
+            routes_register: false
 
   * Secure some modules or your entire application in `security.yml`
 
