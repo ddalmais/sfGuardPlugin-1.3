@@ -214,7 +214,7 @@ administrator bypasses all credential checks.
 The super administrator flag cannot be set on the web, you must set the flag
 directly in the database or use the pake task:
 
-    $ symfony promote-super-admin admin
+    $ symfony guard:promote admin
 
 Validators
 ----------
