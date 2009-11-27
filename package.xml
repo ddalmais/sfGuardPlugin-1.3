@@ -16,10 +16,10 @@
   <email>kris.wallsmith@symfony-project.com</email>
   <active>yes</active>
  </developer>
- <date>2008-12-05</date>
+ <date>2009-11-02</date>
  <version>
-   <release>3.1.3</release>
-   <api>3.0.0</api>
+   <release>3.0.0</release>
+   <api>4.0.0</api>
  </version>
  <stability>
   <release>stable</release>
@@ -165,9 +165,9 @@
    <package>
     <name>symfony</name>
     <channel>pear.symfony-project.com</channel>
-    <min>1.2.0</min>
-    <max>1.3.0</max>
-    <exclude>1.3.0</exclude>
+    <min>1.3.0</min>
+    <max>1.5.0</max>
+    <exclude>1.5.0</exclude>
    </package>
   </required>
  </dependencies>
@@ -178,102 +178,18 @@
  <changelog>
    <release>
       <version>
-        <release>3.1.4</release>
-        <api>3.0.0</api>
+        <release>4.0.0</release>
+        <api>4.0.0</api>
       </version>
       <stability>
        <release>stable</release>
        <api>stable</api>
       </stability>
       <license uri="http://www.symfony-project.com/license">MIT license</license>
-      <date>2008-12-05</date>
+      <date>2009-11-02</date>
       <license>MIT</license>
       <notes>
-        * fabien: fixed login method when called from an Ajax request
-      </notes>
-    </release>
-   <release>
-      <version>
-        <release>3.1.3</release>
-        <api>3.0.0</api>
-      </version>
-      <stability>
-       <release>stable</release>
-       <api>stable</api>
-      </stability>
-      <license uri="http://www.symfony-project.com/license">MIT license</license>
-      <date>2008-12-05</date>
-      <license>MIT</license>
-      <notes>
-        * fabien: updated README file
-        * fabien: changed all task to take an application option instead of an argument
-      </notes>
-    </release>
-  <release>
-     <version>
-       <release>3.1.2</release>
-       <api>3.0.0</api>
-     </version>
-     <stability>
-      <release>stable</release>
-      <api>stable</api>
-     </stability>
-     <license uri="http://www.symfony-project.com/license">MIT license</license>
-     <date>2008-11-25</date>
-     <license>MIT</license>
-     <notes>
-       * fabian: fixed wildcard typo
-     </notes>
-   </release>
-  <release>
-     <version>
-       <release>3.1.1</release>
-       <api>3.0.0</api>
-     </version>
-     <stability>
-      <release>stable</release>
-      <api>stable</api>
-     </stability>
-     <license uri="http://www.symfony-project.com/license">MIT license</license>
-     <date>2008-11-18</date>
-     <license>MIT</license>
-     <notes>
-       * noel: fixed package dependencies
-       * noel: fixed sfGuardUserAdminForm::updateObject signature
-       * noel: Deleted base form filters
-       * noel: fixed sfGuardUserForm
-     </notes>
-   </release>
-   <release>
-     <version>
-       <release>3.1.0</release>
-       <api>3.0.0</api>
-     </version>
-     <stability>
-      <release>stable</release>
-      <api>stable</api>
-     </stability>
-     <license uri="http://www.symfony-project.com/license">MIT license</license>
-     <date>2008-05-26</date>
-     <license>MIT</license>
-     <notes>
-       * fabien: updated admin generator for 1.2
-     </notes>
-   </release>
-    <release>
-      <version>
-        <release>3.0.0</release>
-        <api>1.1.0</api>
-      </version>
-      <stability>
-       <release>stable</release>
-       <api>stable</api>
-      </stability>
-      <license uri="http://www.symfony-project.com/license">MIT license</license>
-      <date>2008-10-08</date>
-      <license>MIT</license>
-      <notes>
-        * noel: backported changes from 1.1
+        * fabien: 
       </notes>
     </release>
   </changelog>
