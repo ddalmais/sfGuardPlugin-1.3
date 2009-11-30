@@ -9,9 +9,6 @@
  */
 class sfGuardUserForm extends sfGuardUserAdminForm
 {
-  protected
-    $pkName = null;
-
   public function configure()
   {
     parent::configure();
