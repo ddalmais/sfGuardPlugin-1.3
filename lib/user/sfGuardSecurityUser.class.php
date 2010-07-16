@@ -94,12 +94,12 @@ class sfGuardSecurityUser extends sfBasicSecurityUser
       $c = new Criteria();
       $expiration_age = sfConfig::get('app_sf_guard_plugin_remember_key_expiration_age', 15 * 24 * 3600);
       $c->add(sfGuardRememberKeyPeer::CREATED_AT, time() - $expiration_age, Criteria::LESS_THAN);
-      sfGuardRememberKeyPeer::doDelete($c);
+      sfGuardRememberKeyPeer::doDelete($c, $con);
 
       // remove other keys from this user
       $c = new Criteria();
       $c->add(sfGuardRememberKeyPeer::USER_ID, $user->getId());
-      sfGuardRememberKeyPeer::doDelete($c);
+      sfGuardRememberKeyPeer::doDelete($c, $con);
 
       // generate new keys
       $key = $this->generateRandomKey();
