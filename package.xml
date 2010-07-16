@@ -194,6 +194,7 @@
       <date>2010-07-16</date>
       <license>MIT</license>
       <notes>
+        * fabien: fixed inactive users can still login to the system (patch from alecs)
         * fabien: added missing connection parameters
         * fabien: made sfGuardFormSignin more flexible (also extends the BaseForm class now)
         * fabien: added missing file in package
