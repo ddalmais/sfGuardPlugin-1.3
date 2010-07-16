@@ -47,6 +47,7 @@
 
      <dir name="lib">
        <dir name="form">
+         <file role="data" name="BasesfGuardFormSignin.class.php" />
          <file role="data" name="sfGuardFormSignin.class.php" />
          <file role="data" name="sfGuardGroupForm.class.php" />
          <file role="data" name="sfGuardGroupPermissionForm.class.php" />
@@ -193,6 +194,7 @@
       <date>2010-07-16</date>
       <license>MIT</license>
       <notes>
+        * fabien: made sfGuardFormSignin more flexible (also extends the BaseForm class now)
         * fabien: added missing file in package
         * fabien: fixed random generator for RememberMe keys (thanks laurentb)
       </notes>
