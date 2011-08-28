@@ -63,8 +63,6 @@ class BasesfGuardAuthActions extends sfActions
       {
         return $this->redirect($module.'/'.sfConfig::get('sf_login_action'));
       }
-
-      $this->getResponse()->setStatusCode(401);
     }
   }
 
